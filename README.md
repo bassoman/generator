@@ -1,7 +1,7 @@
 Branch progress:
 
 ```bash
-next will include a sample index file and associted front end script for socket use.
+next will include a sample index file and associated front end script for socket use.
 ```
 
 
