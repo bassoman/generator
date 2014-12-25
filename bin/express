@@ -20,7 +20,7 @@ program
   .option('-H, --hogan', 'add hogan.js engine support')
   .option('-c, --css <engine>', 'add stylesheet <engine> support (less|stylus|compass) (defaults to plain css)')
   .option('-f, --force', 'force on non-empty directory')
-  .option('-s, --sock'), 'add socket.io server')
+  .option('-s, --sock', 'add socket.io server')
   .parse(process.argv);
 
 // Path
