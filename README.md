@@ -24,7 +24,9 @@ $ express /tmp/foo && cd /tmp/foo
 $ npm install
 ```
 
-```if including socket.io
+If including socket.io
+
+```bash
 $ npm install socket.io
 ```
 
