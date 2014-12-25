@@ -1,3 +1,10 @@
+Branch progress:
+
+```bash
+next will include a sample index file and associted front end script for socket use.
+```
+
+
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
   [Express'](https://github.com/strongloop/express) application generator.
