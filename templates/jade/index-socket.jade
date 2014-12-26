@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+	h1 #{title}
+
+	p Welcome to #{title}
+
+	p The following shows a round trip from typing in Text Box, to the server, and back here to the server messages box. Click Send to start the trip.
+
+	fieldset
+		legend Text Input
+		p
+			label Text box
+			input(type="text", id="myText", value="text here" class='fld')
+		p
+			label Process
+			input(type="button", value="Send to the server", id="send")
+		p
+			label Messages from server
+			textarea(readonly, id='sysMessage', rows='3', cols='80')
+	
+	script(type="text/javascript" src="/javascripts/sock-scripts.js")

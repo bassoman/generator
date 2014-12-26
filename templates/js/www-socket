@@ -10,10 +10,23 @@ var io = require('socket.io').listen(server);
 
 // Note a connect on the server console
 io.sockets.on('connection', function (socket) {
+
     console.log('Client is connected via socket.io');
 
 	// add here your socket listeners and emitters.
 	// socket.emit / socket.on
+
+	socket.emit('message', {content: 'You are connected!' });
+
+	// When the server receives a 'message' type signal from the client
+    socket.on('message', function (message) {
+        console.log('A client is speaking to me! They’re saying: ' + message);
+    }); 
+
+	socket.on('data', function(data) {
+		console.log(data);
+		socket.emit('message', {content: data.myText });
+	});
 
 });
 

@@ -6,3 +6,24 @@ body {
 a {
   color: #00B7FF;
 }
+
+fieldset {
+  padding: 1em;
+  max-width:50%;
+  min-width:550px;
+  font:80%/1 sans-serif;
+  }
+
+label {
+  float:left;
+  width:10%;
+  margin-right:0.5em;
+  padding-top:0.5em;
+  text-align:right;
+  font-weight:bold;
+  }
+
+textarea {
+	padding-top:0.2em;
+	max-width: 80%}
+
