@@ -62,9 +62,10 @@ sockTemplates = {
 
 program.server = 'default';
 selectedTemplates = defaultTemplates;
-if (program.sock)
+if (program.sock) {
   program.server = 'sock';
   selectedTemplates = sockTemplates;
+}
 
 function load_template(name) {
   return fs.readFileSync(path.join(__dirname, '..', 'templates', name), 'utf-8');
