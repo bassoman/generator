@@ -1,3 +1,7 @@
+##Notes regarding this fork
+
+  socket.io examples only available with Jade template engine for now.
+
 
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
@@ -31,10 +35,4 @@ $ npm install
 $ npm start
 ```
 
-  To see an example of socket.io and Express rocking in harmony, give this a try after installation.
-  It only supports the default Jade engine for now:
-
-  ```bash
-  $ express --sock fooapp
-  ```
 ### [License (MIT)](LICENSE)
