@@ -47,6 +47,10 @@ defaultTemplates = {
     index: 'jade/index.jade',
     layout: 'jade/layout.jade',
     error: 'jade/error.jade'
+  },
+  hjs: {
+    index: 'hogan/index.hjs',
+    error: 'hogan/error.hjs'
   }
 }
 
@@ -55,6 +59,10 @@ sockTemplates = {
     index: 'jade/index-socket.jade',
     layout: 'jade/layout-socket.jade',
     error: 'jade/error.jade'
+  },
+  hjs: {
+    index: 'hogan/index-socket.hjs',
+    error: 'hogan/error.hjs'
   }
 }
 
@@ -164,8 +172,8 @@ function createApplicationAt(path) {
           // copy_template('jade/error.jade', path + '/views/error.jade');
           break;
         case 'hjs':
-          copy_template('hogan/index.hjs', path + '/views/index.hjs');
-          copy_template('hogan/error.hjs', path + '/views/error.hjs');
+          copy_template(selectedTemplates.hjs.index, path + '/views/index.hjs');
+          copy_template(selectedTemplates.hjs.error, path + '/views/error.hjs');
           break;
         case 'hbs':
           copy_template('hbs/index.hbs', path + '/views/index.hbs');

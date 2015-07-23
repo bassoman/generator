@@ -32,7 +32,7 @@ $ npm start
 ```
 
   To see an example of socket.io and Express rocking in harmony, give this a try after installation.
-  It only supports the default Jade engine for now:
+  It only supports the Jade or Hogan engine for now:
 
   ```bash
   $ express --sock fooapp

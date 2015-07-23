@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.io Sample</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script type='text/javascript' src='http://localhost:3000/socket.io/socket.io.js'></script>
+  </head>
+
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    <p>The following shows a round trip from typing in Text Box, to the server, and back here to the server messages box. Click Send to start the trip.</p>
+	<fieldset>
+		<legend>Text Input</legend>
+		<p>
+			<label>Text box</label>
+			<input type="text" id="myText" value="text here" class="fld"/>
+		</p>
+		<p>
+			<label>Process</label>
+			<input type="button" value="Send to the server" id="send"/>
+		</p>
+		<p>
+			<label>Messages from server</label>
+			<textarea readonly id="sysMessage" rows="3" cols="80"></textarea>
+		</p>
+	</fieldset>
+	<script type="text/javascript" src="/javascripts/sock-scripts.js"></script>
+
+  </body>
+
+</html>
